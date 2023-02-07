@@ -25,6 +25,7 @@ async function generateJoke() {
     // .then((res) => res.json()) // Promseからレスポンスデータ => jsonを抜き取る
     // .then((data) => console.log(data)) // データを出力
     // .catch((err) => console.log(err)) // エラーの場合こちらに入る。APIのURLを適当なものにすると動作確認できる
+
   // awaitを使う場合
   const res = await fetch('https://8r1b634mb8.execute-api.ap-northeast-1.amazonaws.com/APItest/dynamodbctrl', config);
   const data = await res.json();
